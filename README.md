@@ -23,7 +23,7 @@ The project implements a RESTful API and utilizes React.js framework for fronten
    ```sh
    git clone https://github.com/rabarbar15/items-booking-app.git
    ```   
-3. Go to project directory and build it using Docker Compose.
+3. Go to project directory and build using Docker Compose
      
    ```sh
    docker-compose up --build
