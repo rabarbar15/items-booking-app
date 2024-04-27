@@ -6,6 +6,7 @@ Project built during Web Applications Designing classes at Jagiellonian Universi
 
 The goal of this project is to develop the specification for a simple website and then implement it using the Express framework. The website enables reserving various resources, including a ping-pong table,
 a projector etc. When creating a reservation, the user must enter their name and choose a datetime. Items and reservations are stored in a SQL database.   
+
 The project implements a RESTful API and utilizes React.js framework for frontend.   
 
 ## Built With   
@@ -17,11 +18,13 @@ The project implements a RESTful API and utilizes React.js framework for fronten
 
 ## Installation    
 
-1. Clone the repo    
+1. Clone the repo
+   
    ```sh
    git clone https://github.com/rabarbar15/items-booking-app.git
    ```   
-2. Go to project directory and build it using Docker Compose.    
+3. Go to project directory and build it using Docker Compose.
+     
    ```sh
    docker-compose up --build
    ```    
