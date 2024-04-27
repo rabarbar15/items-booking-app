@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  /* background-image: url('assets/wooden-natural-floor-decoration-concept.jpg'); */
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: aliceblue;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  padding-top: 10rem;
+  /* background-color: aqua; */
+}
+
+.homePage, .itemsList, .itemPage, .reservationPage {
+  padding: 3rem;
+  background-color: white;
+  min-height: 50vh;
+  width: 45vw;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 2rem;
+  border-radius: 5px;
+  /* -webkit-box-shadow: 8px 8px 20px -12px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 8px 8px 20px -12px rgba(66, 68, 90, 1);
+  box-shadow: 8px 8px 20px -12px rgba(66, 68, 90, 1); */
+  border: 2px solid black;
+}
+
+.itemsList, .itemPage, .reservationPage {
+  min-height: 30vh;
+}
+
+ul {
+  font-size: 1.4rem;
+  list-style-position: inside;
+}
+
+ul button {
+  margin: 0 2rem;
+}
+
+
+.homePage h1 {
+  line-height: 3rem;
+}
+
+.homePage p {
+  padding: 2rem 5rem 2rem 5rem;
+  font-size: 1.2rem;
+}
+
+button, input[type="submit"] {
+  background-color: whitesmoke;
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  font-size: 1.1rem;
+}
+
+button:hover, input[type="submit"]:hover {
+  background-color:antiquewhite
+  /* color: white; */
+}
+
+.item {
+  padding: 1.3rem 0;
+}
+
+.itemPage p {
+  font-size: 1.2rem;
+  padding: 1rem 1rem;
+}
+
+.itemPage h1 {
+  padding-bottom: 1rem;
+}
+
+.itemPage button {
+  margin-top: 1rem;
+}
+
+.reservationPage h3 {
+  padding: 2rem 4rem;
+}
+
+.reservationPage label {
+  font-size: 1.2rem;
+}
+
+input {
+  padding: 0.3rem;
+  margin: 0.4rem 0;
+}
+
+.modal, .overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.299);
+}
+
+.modal-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background-color: white;
+  padding: 2rem 3rem;
+  border-radius: 3px;
+  max-width: 600px;
+  min-width: 300px;
+  text-align: center;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 7px;
+  font-size: 0.7rem;
+}
+
+.main-page-btn {
+  margin: 0.4rem;
+}
+
+/* * {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #333;
+    color: hsl(200, 100%, 90%);
+    max-width: 400px;
+    padding: 1rem;
+    margin: 0 auto;
+  }
+  
+  .new-item-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+  
+  .btn {
+    background: hsl(200, 100%, 50%, 0.1);
+    border: 1px solid hsl(200, 100%, 50%);
+    color: hsl(200, 100%, 50%);
+    padding: 0.25em 0.5em;
+    border-radius: 0.25em;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .btn:hover,
+  .btn:focus-visible {
+    background: hsl(200, 100%, 50%, 0.2);
+  }
+  
+  .btn.btn-danger {
+    background: hsl(0, 100%, 40%, 0.1);
+    border: 1px solid hsl(0, 100%, 40%);
+    color: hsl(0, 100%, 40%);
+  }
+  
+  .btn.btn-danger:hover,
+  .btn.btn-danger:focus-visible {
+    background: hsl(0, 100%, 40%, 0.2);
+  }
+  
+  .new-item-form input {
+    outline: none;
+    border: 1px solid hsl(200, 100%, 40%);
+    background: hsl(200, 100%, 30%);
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+    color: hsl(200, 100%, 90%);
+  }
+  
+  .new-item-form input:focus {
+    border: 1px solid hsl(200, 100%, 70%);
+  }
+  
+  .header {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .list {
+    margin: 0;
+    padding: 0;
+    margin-left: 1rem;
+    list-style: none;
+  }
+  
+  .list li:has(input:checked) label {
+    color: hsl(200, 20%, 40%);
+  }
+  
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  
+  .list li {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .list li label {
+    display: flex;
+    gap: 0.25rem;
+    cursor: pointer;
+    align-items: center;
+  }
+  
+  .list li:has(input:focus-visible) label {
+    outline: 1px solid hsl(200, 100%, 50%);
+  }
+  
+  .list li input {
+    outline: none;
+    width: 0;
+    height: 0;
+    appearance: none;
+    pointer-events: none;
+    position: absolute;
+  }
+  
+  .list li label::before {
+    content: "";
+    display: block;
+    width: 0.9rem;
+    height: 0.9rem;
+    background: hsl(200, 100%, 90%);
+    border-radius: 0.25em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .list li label:hover::before {
+    background: hsl(200, 100%, 80%);
+  }
+  
+  .list li:has(input:checked) label::before {
+    content: "✔";
+    background: hsl(200, 100%, 40%);
+    color: hsl(200, 100%, 90%);
+    font-size: 0.75rem;
+    font-weight: bold;
+  }
+  
+  .list li:has(input:checked) label:hover::before {
+    background: hsl(200, 100%, 30%);
+  } */
