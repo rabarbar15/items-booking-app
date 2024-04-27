@@ -17,10 +17,10 @@ The project implements a RESTful API and utilizes React.js framework for fronten
 
 ## Installation    
 
-1. Clone the repo   
-  ```sh
-  git clone https://github.com/bestemic/todo-app.git](https://github.com/rabarbar15/items-booking-app.git
-  ```    
+1. Clone the repo
+   ```sh
+   git clone https://github.com/rabarbar15/items-booking-app.git
+   ```   
 2. Go to project directory and build it using Docker Compose.
    ```sh
    docker-compose up --build
